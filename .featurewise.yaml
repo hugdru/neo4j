@@ -63,7 +63,7 @@ domains:
       Replica Recovery and Resynchronization: supported - automatic
     Data Distribution:
       Data Distribution Architecture: [single database only, master-single slave, master-multiple slaves]
-      Data Distribution Method: Not relevant (single server only)
+      Data Distribution Method: [Not relevant (single server only)]
       Automatic Data Rebalancing: [no rebalancing (single server only)]
       Physical Data Distribution: [single cluster]
       Query Architecture: external load balancer required
@@ -71,13 +71,13 @@ domains:
       Merging Query Results from Multiple Shards: [not supported]
     Security:
       Client Authentication: [SSL]
-      Server authentication: [not secured]
+      Server Authentication: [not secured]
       Credential Store: certificates only
       Role Based Security: supported - requires programmatic extension
-      Security Role Options: not supported
+      Security Role Options: [not supported]
       Scope of Roles: [database]
       Database Encryption: not supported
-      Logging: requires external components (e.g. Web Servers)
+      Logging: [requires external components (e.g. Web Servers)]
     Admin:
       Configuration Files: multiple
       Node command line access: non-authenticated
