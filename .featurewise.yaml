@@ -8,7 +8,7 @@ domains:
     url: https://github.com/hugdru/schemas/blob/master/big_data-schema.yaml
   data:
     Scalability:
-      Scalable Distribution Architecture: replicate complete database only
+      Scalable Distribution Architecture: [replicate complete database only]
       Scaling Out - Adding Data Storage Capacity: N/A - single server only
       Request Load Balancing: uses HTTP-based load balancers
       Granularity of Write Locks: locks on updated objects only
@@ -19,26 +19,26 @@ domains:
       Distributed Transactions: supported
       Durable Writes: supported
       Quorum Reads and Writes: not relevant
-      Number of Replicas to Read: "not applicable: master-slave"
-      Number of Replicas to Write: "not applicable: master-slave"
+      Number of Replicas to Read: not applicable - master-slave
+      Number of Replicas to Write: not applicable - master-slave
       Writes with Unavailable Replicas: not applicable
-      Read from Master Only: specified in the application configuration (eg Web load balancer)
-      Resolving Write Conflicts: "not applicable: master-slave"
+      Read from Master Only: specified in the application configuration (e.g. Web load balancer)
+      Resolving Write Conflicts: not applicable - master-slave
     Query Language:
       API-based: supported
       Declarative Query Language: supported
       REST/HTTP-based Queries: supported
       Languages Supported: [Java, C#, Python, PHP, Ruby, Scala, Javascript]
-      Cursor-based Queries: not suppported
+      Cursor-based Queries: not supported
       JOIN-style queries: supported
-      Complex Data Types: arrays
+      Complex Data Types: [arrays]
       Restrict Query Result Set Size: supported
       Key Matching Options: [exact, partial match, regular expressions]
       Sort Options: [ascending, descending]
-      Triggers: not supported
-      Data Object Expiry: not suppported
+      Triggers: [not supported]
+      Data Object Expiry: not supported
     Data Model:
-      Data model: Graph
+      Data Model: Graph
       Fixed Schema: not required
       Opaque Data Objects: not required
       Hierarchical Data Objects: supported
@@ -49,13 +49,13 @@ domains:
       Query by Partial Keys: supported
       Query by Non-key Values: supported
       Map Reduce API: not supported
-      Indexed Text Search: indexed text search is support in a plug-in (e.g. Solr)
+      Indexed Text Search: support in a plug-in (e.g. Solr)
     Data Replication:
       Replication Architecture: master-slave
       Replication for Backup: supported
-      Replication across Data Centers: supported only by standard replication mechanisms
-      Replica Writes: to any replica
-      Replica Reads: from any replica
+      Replication across Data Centers: supported by standard data replication mechanisms
+      Replica Writes: [to any replica]
+      Replica Reads: [from any replica]
       Read Repair: not relevant
       Automatic Replica Failure Detection: supported
       Automatic Failover: supported
@@ -64,24 +64,24 @@ domains:
     Data Distribution:
       Data Distribution Architecture: [single database only, master-single slave, master-multiple slaves]
       Data Distribution Method: Not relevant (single server only)
-      Automatic Data Rebalancing: no rebalancing (single server only)
-      Physical Data Distribution: single cluster
+      Automatic Data Rebalancing: [no rebalancing (single server only)]
+      Physical Data Distribution: [single cluster]
       Query Architecture: external load balancer required
       Queries using Non-Shard Key Value: [secondary indexes, non-indexed (scan)]
-      Merging Query Results from Multiple Shards: not supported
+      Merging Query Results from Multiple Shards: [not supported]
     Security:
-      Client Authentication: SSL
-      Server authentication: Not secured
+      Client Authentication: [SSL]
+      Server authentication: [not secured]
       Credential Store: certificates only
       Role Based Security: supported - requires programmatic extension
       Security Role Options: not supported
-      Scope of Roles: database
+      Scope of Roles: [database]
       Database Encryption: not supported
       Logging: requires external components (e.g. Web Servers)
     Admin:
       Configuration Files: multiple
       Node command line access: non-authenticated
-      Node addition/removal: single file
+      Node addition/removal: [single file]
       Cluster monitoring: [snapshot, enterprise version only]
       Dump database configuration: supported
       Database object count: supported
