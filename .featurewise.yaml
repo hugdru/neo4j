@@ -19,11 +19,11 @@ domains:
       Distributed Transactions: supported
       Durable Writes: supported
       Quorum Reads and Writes: not relevant
-      Number of Replicas to Read: not applicable: master-slave
-      Number of Replicas to Write: not applicable: master-slave
+      Number of Replicas to Read: "not applicable: master-slave"
+      Number of Replicas to Write: "not applicable: master-slave"
       Writes with Unavailable Replicas: not applicable
       Read from Master Only: specified in the application configuration (eg Web load balancer)
-      Resolving Write Conflicts: not applicable: master-slave
+      Resolving Write Conflicts: "not applicable: master-slave"
     Query Language:
       API-based: supported
       Declarative Query Language: supported
